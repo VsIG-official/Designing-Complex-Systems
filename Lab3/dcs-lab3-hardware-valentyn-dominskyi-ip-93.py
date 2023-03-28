@@ -1,11 +1,9 @@
 import sqlite3
 import concurrent.futures
-import os
 import matplotlib.pyplot as plt
 import time
 
 from threading import Lock
-from stm import atomically
 
 class MovieDatabaseHardware:
     def __init__(self, db_name):
